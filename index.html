@@ -49,6 +49,19 @@
 		  height: 235px;
 		  width: 120px;
 		}
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%; /* Aspect ratio 16:9 (height / width = 9 / 16 = 0.5625 or 56.25%) */
+			height: 0;
+			overflow: hidden;
+		}
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	  </style>
 
 </head> 
@@ -71,7 +84,7 @@
 					<div class="profile-section pt-3 pt-lg-0">
 						<img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.png" alt="image" >			
 						
-						<div class="bio mb-3"> Hi, my name is Lalith and I'm a Full Stack software engineer and Automation Bot Developer. Welcome
+						<div class="bio mb-3"> Hi, my name is Lalith and I'm a full stack software engineer and automation bot developer. Welcome
 							to my personal portfolio!</div><!--//bio-->
 							<ul class="social-list list-inline py-2 mx-auto">
                
@@ -114,7 +127,7 @@
 				</div>
 				<!--//bio-->
 				<div class="mb-4">
-				  <a class="btn btn-primary me-2 mb-3" href="LalithAdithyaKarri-Resume.pdf" target="_blank"
+				  <a class="btn btn-primary me-2 mb-3" href="LalithAdityaKarri-Resume.pdf" target="_blank"
 					><i class="fas fa-arrow-alt-circle-right me-2"></i
 					>&nbsp;<span class="d-none d-md-inline">View</span> Resume</a
 				  >
@@ -441,8 +454,10 @@
 			  </ul>
 			  <ul>
 				<h4 class="subheading mb-3">Project Sample</h4>
-				<iframe width="560" height="300" src="https://www.youtube.com/embed/oAfqsVWeT78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</ul>
+				<div class="video-container">
+					<iframe width="560" height="300" src="https://www.youtube.com/embed/oAfqsVWeT78" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</ul>
 			</div>
 		  </div>
 		  <!--//media-body-->
